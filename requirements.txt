@@ -1,0 +1,31 @@
+langchain
+langchain-core
+
+#open AI Integration
+langchain-openai
+openai
+
+# Anthropic Integration
+langchain-anthropic
+
+# Google Gemini (PALM) Integration
+langchain-google-genai
+google-generativeai
+
+# Hugging Face Integration
+langchain-huggingface
+transformers
+huggingface-hub
+chromadb
+langchain_chroma
+langchain-community
+
+# Environment Variable management
+python-dotenv
+Flask==2.3.3
+
+# Machine learning Utilities
+
+scikit-learn
+numpy
+pandas

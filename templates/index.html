@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Centered Form</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
+
+    form {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-size: 1.5em;
+    }
+
+    input[name="name"] {
+      padding: 10px;
+      font-size: 1em;
+      width: 300px;
+      margin-bottom: 20px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    #loading {
+      display: none;
+      color: #d17f00;
+      font-size: 1em;
+      margin-top: 15px;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa; /* Light grey blur style */
+      font-weight: normal;
+    }
+  </style>
+</head>
+<body>
+  <form action="/result" method="post" onsubmit="showLoading()">
+    <input name="name" placeholder="Enter Your Query" required>
+    <br>
+    <input type="submit" value="Submit">
+    <p id="loading">⏳ Please wait, your result is on the way...</p>
+  </form>
+
+  <div class="footer">
+    Powered by Mayank
+  </div>
+
+  <script>
+    function showLoading() {
+      document.getElementById("loading").style.display = "block";
+    }
+  </script>
+</body>
+</html>
